@@ -28,4 +28,4 @@ Attention Decoder Network:
 
 <img src="./other/attention-denet.png" alt="decoder" style="width:200px;"/>
 
-![attention-decoder-net](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png =250x250)
+![attention-decoder-net](./other/attention-decoder-network.png=250x250)
