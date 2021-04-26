@@ -16,8 +16,6 @@ from lang_filter import filterPairs
 from encoder import EncoderRNN
 from decoder import DecoderRNN, AttnDecoderRNN
 
-from visualize import showPlot
-
 from utils import *
 
 def prepareData(lang1, lang2, reverse=False):
