@@ -209,6 +209,8 @@ evaluateRandomly(encoder1, attn_decoder1)
 
 output_words, attentions = evaluate(
     encoder1, attn_decoder1, "je suis trop froid .")
+
+import matplotlib.pyplot as plt
 plt.matshow(attentions.numpy())
 
 def showAttention(input_sentence, output_words, attentions):
