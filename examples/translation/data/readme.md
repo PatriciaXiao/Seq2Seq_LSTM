@@ -8,4 +8,4 @@ As is mentioned in [the tutorial](https://pytorch.org/tutorials/intermediate/seq
 
 Englich-French file is necessary for this example.
 
-Please download it as ```data/eng-fra.txt``` before continuing
+Please download it to ```data/eng-fra.txt``` before continuing
