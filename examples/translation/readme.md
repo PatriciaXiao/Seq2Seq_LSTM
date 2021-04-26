@@ -26,4 +26,4 @@ Decoder Network:
 
 Attention Decoder Network:
 
-<img src="./other/attention-denet.png" alt="decoder" style="width:200px;"/> <img src="./other/attention-decoder-network.png" alt="decoder" style="width:100px;"/>
+<img src="./other/attention-denet.png" alt="decoder" style="width:200px;"/> <img src="./other/attention-decoder-network.png" alt="decoder" width="100"/>
