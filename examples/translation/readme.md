@@ -2,7 +2,7 @@
 
 ## Where to Download from
 
-As is mentioned in [the tutorial](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html), all data are available at [https://www.manythings.org/anki/](https://www.manythings.org/anki/)
+As is mentioned in [the tutorial](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html), all data (any other languages) are available at [https://www.manythings.org/anki/](https://www.manythings.org/anki/)
 
 ## Which file is necessary
 
