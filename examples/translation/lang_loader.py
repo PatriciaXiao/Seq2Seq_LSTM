@@ -1,9 +1,6 @@
 import unicodedata
 import re
 
-SOS_token = 0
-EOS_token = 1
-
 
 class Lang:
     def __init__(self, name):

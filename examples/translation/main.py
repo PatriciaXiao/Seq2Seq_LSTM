@@ -13,6 +13,8 @@ import torch.nn.functional as F
 from lang_loader import readLangs
 from lang_filter import filterPairs
 
+SOS_token = 0
+EOS_token = 1
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def prepareData(lang1, lang2, reverse=False):
