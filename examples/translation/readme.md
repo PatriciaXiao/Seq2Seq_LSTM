@@ -15,3 +15,7 @@ Recurrent Neural Network (RNN): a network that operates on a sequence and uses i
 Sequence to Sequence Network (seq2seq network, or Encoder Decoder network): a model consisting of two RNNs --- the encoder, and the decoder. 
 * the encoder: reads an input sequence and outputs a single vector;
 * the decoder reads that vector to produce an output sequence.
+
+Encoder Network:
+
+<img src="./other/encoder-network.png" alt="encoder" style="width:200px;"/>
