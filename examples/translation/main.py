@@ -144,6 +144,11 @@ def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, lear
 
     showPlot(plot_losses)
 
-trainIters(EncoderRNN, DecoderRNN, 1)
+input_size = 200
+hidden_size = 100
+output_size = 200
+encoder = EncoderRNN(input_size, hidden_size)
+decoder = DecoderRNN(hidden_size, output_size)
+trainIters(encoder, decoder, 1)
 
 
