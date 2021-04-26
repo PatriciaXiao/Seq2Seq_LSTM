@@ -28,4 +28,4 @@ Attention Decoder Network:
 
 <img src="./other/attention-denet.png" alt="decoder" style="width:200px;"/>
 
-![attention-decoder-net](./other/attention-decoder-network.png=250x250)
+![attention-decoder-net](./other/attention-decoder-network.png)
