@@ -19,3 +19,7 @@ Sequence to Sequence Network (seq2seq network, or Encoder Decoder network): a mo
 Encoder Network:
 
 <img src="./other/encoder-network.png" alt="encoder" style="width:200px;"/>
+
+Decoder Network:
+
+<img src="./other/decoder-network.png" alt="decoder" style="width:200px;"/>
