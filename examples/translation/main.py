@@ -14,7 +14,7 @@ from lang_loader import readLangs
 from lang_filter import filterPairs
 
 from encoder import EncoderRNN
-from decoder import DecoderRNN
+from decoder import DecoderRNN, AttnDecoderRNN
 
 from visualize import showPlot
 
