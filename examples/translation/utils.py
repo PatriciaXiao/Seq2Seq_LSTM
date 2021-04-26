@@ -1,5 +1,6 @@
 import time
 import math
+import torch
 
 SOS_token = 0
 EOS_token = 1
@@ -14,6 +15,8 @@ eng_prefixes = (
     "we are", "we re ",
     "they are", "they re "
 )
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def asMinutes(s):
     m = math.floor(s / 60)
