@@ -9,3 +9,9 @@ Englich-French file is necessary for this example.
 Please download and unzip [data.zip](https://download.pytorch.org/tutorial/data.zip) before continuing.
 
 ## Seq2Seq Model
+
+Recurrent Neural Network (RNN): a network that operates on a sequence and uses its own output as input for subsequent steps.
+
+Sequence to Sequence Network (seq2seq network, or Encoder Decoder network): a model consisting of two RNNs --- the encoder, and the decoder. 
+* the encoder: reads an input sequence and outputs a single vector;
+* the decoder reads that vector to produce an output sequence.
