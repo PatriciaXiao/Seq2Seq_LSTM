@@ -220,7 +220,6 @@ def evaluateAndShowAttention(input_sentence):
     print('input =', input_sentence)
     print('output =', ' '.join(output_words))
     showAttention(input_sentence, output_words, attentions)
-    input()
 
 
 evaluateAndShowAttention("elle a cinq ans de moins que moi .")
