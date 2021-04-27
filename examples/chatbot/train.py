@@ -53,7 +53,7 @@ def maskNLLLoss(inp, target, mask):
     return loss, nTotal.item()
 
 # Single training iteration
-teacher_forcing_ratio = 0.5
+# teacher_forcing_ratio = 0.5
 def train(input_variable, lengths, target_variable, mask, max_target_len, encoder, decoder, embedding,
           encoder_optimizer, decoder_optimizer, batch_size, clip, max_length=MAX_LENGTH):
 
@@ -308,9 +308,15 @@ clip = 50.0
 teacher_forcing_ratio = 1.0
 learning_rate = 0.0001
 decoder_learning_ratio = 5.0
+"""
 n_iteration = 4000
 print_every = 1
 save_every = 500
+"""
+# debug
+n_iteration = 200
+print_every = 10
+save_every = 100
 
 # Ensure dropout layers are in train mode
 encoder.train()
