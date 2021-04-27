@@ -11,7 +11,6 @@ import torch.nn.functional as F
 import os
 import random
 from io import open
-import itertools
 import math
 
 

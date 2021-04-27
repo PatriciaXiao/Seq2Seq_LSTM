@@ -1,3 +1,5 @@
+import itertools
+
 from utils import *
 
 class Voc:
