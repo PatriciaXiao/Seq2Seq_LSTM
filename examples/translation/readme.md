@@ -35,3 +35,7 @@ Attention Decoder Network:
 ```bash
 python train.py
 ```
+
+## Batched Version
+
+See notebook [seq2seq-translation-batched.ipynb](seq2seq-translation-batched.ipynb).
