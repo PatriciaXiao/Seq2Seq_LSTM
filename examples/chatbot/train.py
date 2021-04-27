@@ -15,7 +15,7 @@ import itertools
 import math
 
 
-from data_loader import loadPrepareData, trimRareWords
+from data_loader import loadPrepareData, trimRareWords, batch2TrainData
 
 from utils import *
 
@@ -30,3 +30,15 @@ for pair in pairs[:10]:
 
 # Trim voc and pairs
 pairs = trimRareWords(voc, pairs, MIN_COUNT)
+
+# Example for validation
+small_batch_size = 5
+batches = batch2TrainData(voc, [random.choice(pairs) for _ in range(small_batch_size)])
+input_variable, lengths, target_variable, mask, max_target_len = batches
+
+print("input_variable:", input_variable)
+print("lengths:", lengths)
+print("target_variable:", target_variable)
+print("mask:", mask)
+print("max_target_len:", max_target_len)
+
