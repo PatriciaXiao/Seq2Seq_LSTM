@@ -29,3 +29,9 @@ Attention Decoder Network:
 <img src="./other/attention-denet.png" alt="decoder" style="width:200px;"/>
 
 ![attention-decoder-net](./other/attention-decoder-network.png)
+
+## Usage
+
+```bash
+python train.py
+```
