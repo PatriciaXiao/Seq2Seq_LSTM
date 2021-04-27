@@ -10,26 +10,12 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 
-from data_loader import readLangs, filterPairs
+from data_loader import prepareData
 
 from encoder import EncoderRNN
 from decoder import DecoderRNN, AttnDecoderRNN
 
 from utils import *
-
-def prepareData(lang1, lang2, reverse=False):
-    input_lang, output_lang, pairs = readLangs(lang1, lang2, reverse)
-    print("Read %s sentence pairs" % len(pairs))
-    pairs = filterPairs(pairs)
-    print("Trimmed to %s sentence pairs" % len(pairs))
-    print("Counting words...")
-    for pair in pairs:
-        input_lang.addSentence(pair[0])
-        output_lang.addSentence(pair[1])
-    print("Counted words:")
-    print(input_lang.name, input_lang.n_words)
-    print(output_lang.name, output_lang.n_words)
-    return input_lang, output_lang, pairs
 
 
 input_lang, output_lang, pairs = prepareData('eng', 'fra', True)
@@ -207,7 +193,7 @@ evaluateRandomly(encoder1, attn_decoder1)
 output_words, attentions = evaluate(
     encoder1, attn_decoder1, "je suis trop froid .")
 
-import matplotlib.pyplot as plt
+
 plt.matshow(attentions.numpy())
 
 def showAttention(input_sentence, output_words, attentions):
@@ -228,13 +214,13 @@ def showAttention(input_sentence, output_words, attentions):
 
     plt.show()
 
-
 def evaluateAndShowAttention(input_sentence):
     output_words, attentions = evaluate(
         encoder1, attn_decoder1, input_sentence)
     print('input =', input_sentence)
     print('output =', ' '.join(output_words))
     showAttention(input_sentence, output_words, attentions)
+    input()
 
 
 evaluateAndShowAttention("elle a cinq ans de moins que moi .")
