@@ -10,8 +10,7 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 
-from lang_loader import readLangs
-from lang_filter import filterPairs
+from data_loader import readLangs, filterPairs
 
 from encoder import EncoderRNN
 from decoder import DecoderRNN, AttnDecoderRNN

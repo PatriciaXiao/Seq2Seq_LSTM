@@ -1,14 +1,15 @@
 import unicodedata
 import re
 
+from utils import *
 
 class Lang:
     def __init__(self, name):
         self.name = name
         self.word2index = {}
         self.word2count = {}
-        self.index2word = {0: "SOS", 1: "EOS"}
-        self.n_words = 2  # Count SOS and EOS
+        self.index2word = {SOS_token: "SOS", EOS_token: "EOS"}
+        self.n_words = len(self.index2word)  # 2, Count SOS and EOS
 
     def addSentence(self, sentence):
         for word in sentence.split(' '):
@@ -62,4 +63,13 @@ def readLangs(lang1, lang2, reverse=False):
 
     return input_lang, output_lang, pairs
 
+
+def filterPair(p):
+    return len(p[0].split(' ')) < MAX_LENGTH and \
+        len(p[1].split(' ')) < MAX_LENGTH and \
+        p[1].startswith(eng_prefixes)
+
+
+def filterPairs(pairs):
+    return [pair for pair in pairs if filterPair(pair)]
 
