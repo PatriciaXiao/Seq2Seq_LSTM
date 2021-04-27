@@ -16,6 +16,7 @@ SOS_token = 1  # Start-of-sentence token
 EOS_token = 2  # End-of-sentence token
 
 MAX_LENGTH = 10  # Maximum sentence length to consider
+MIN_COUNT = 3    # Minimum word count threshold for trimming
 
 # Turn a Unicode string to plain ASCII, thanks to
 # https://stackoverflow.com/a/518232/2809427

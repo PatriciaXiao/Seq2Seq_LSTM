@@ -15,7 +15,7 @@ import itertools
 import math
 
 
-from data_loader import loadPrepareData
+from data_loader import loadPrepareData, trimRareWords
 
 from utils import *
 
@@ -26,3 +26,7 @@ voc, pairs = loadPrepareData(corpus, corpus_name, datafile, save_dir)
 print("\npairs:")
 for pair in pairs[:10]:
     print(pair)
+
+
+# Trim voc and pairs
+pairs = trimRareWords(voc, pairs, MIN_COUNT)
