@@ -14,7 +14,7 @@ from io import open
 import math
 
 
-from data_loader import loadPrepareData, trimRareWords, batch2TrainData
+from data_loader import loadPrepareData, trimRareWords, batch2TrainData, indexesFromSentence
 from encoder import EncoderRNN
 from decoder import LuongAttnDecoderRNN
 
