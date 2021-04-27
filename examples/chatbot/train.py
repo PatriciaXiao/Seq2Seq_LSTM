@@ -314,9 +314,9 @@ print_every = 1
 save_every = 500
 """
 # debug
-n_iteration = 100
+n_iteration = 500
 print_every = 10
-save_every = 100
+save_every = 500
 """
 
 # Ensure dropout layers are in train mode
