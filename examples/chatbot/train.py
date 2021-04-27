@@ -17,4 +17,3 @@ import math
 
 from utils import *
 
-printLines(os.path.join(corpus, "movie_lines.txt"))
