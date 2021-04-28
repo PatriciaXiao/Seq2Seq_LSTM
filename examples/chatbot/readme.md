@@ -7,3 +7,7 @@
 The *formatted_movie_lines.txt* is generated automatically by running [preprocess_data.py](./preprocess_data.py).
 
 ## Usage
+
+```shell
+python train.py
+```
